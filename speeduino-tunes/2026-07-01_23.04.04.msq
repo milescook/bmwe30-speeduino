@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <msq xmlns="http://www.msefi.com/:msq">
-<bibliography author="TunerStudio MS Ultra 3.3.01 - EFI Analytics, Inc." tuneComment="&lt;html&gt;Restore Point: Before loading Restore Point E30B20_2026-05-12_15.49.45 to E30B20 - &lt;br&gt;Restore Point: Project close - &lt;br&gt;" writeDate="Sat Jun 20 09:15:33 BST 2026"/>
+<bibliography author="TunerStudio MS Ultra 3.3.01 - EFI Analytics, Inc." tuneComment="&lt;html&gt;Restore Point: User Requested Save of Settings - &lt;br&gt;" writeDate="Wed Jul 01 23:04:06 BST 2026"/>
 <versionInfo fileFormat="5.0" firmwareInfo="Speeduino+202207.2" nPages="15" signature="speeduino 202207"/>
 <page>
 <pcVariable name="tsCanId">"CAN ID 0"</pcVariable>
@@ -518,8 +518,8 @@
 <constant name="tachoDiv">"Normal"</constant>
 <constant digits="0" name="tachoDuration" units="ms">1.0</constant>
 <constant digits="0" name="maeThresh" units="kPa/s">255.0</constant>
-<constant digits="0" name="taeThresh" units="%/s">20.0</constant>
-<constant digits="0" name="aeTime" units="ms">20.0</constant>
+<constant digits="0" name="taeThresh" units="%/s">35.0</constant>
+<constant digits="0" name="aeTime" units="ms">40.0</constant>
 <constant name="display">"Generic 128x32"</constant>
 <constant name="display1">"RPM"</constant>
 <constant name="display2">"O2"</constant>
@@ -528,7 +528,7 @@
 <constant name="display5">"RPM"</constant>
 <constant name="displayB1">"RPM"</constant>
 <constant name="displayB2">"RPM"</constant>
-<constant digits="1" name="reqFuel" units="ms">15.2</constant>
+<constant digits="1" name="reqFuel" units="ms">14.9</constant>
 <constant digits="0" name="divider">3.0</constant>
 <constant name="alternate">"Alternating"</constant>
 <constant name="multiplyMAP1">"No"</constant>
@@ -562,8 +562,8 @@
 <constant digits="0" name="flexFreqLow" units="Hz">50.0</constant>
 <constant digits="0" name="flexFreqHigh" units="Hz">150.0</constant>
 <constant digits="0" name="boostMaxDuty" units="%">80.0</constant>
-<constant digits="0" name="tpsMin" units="ADC">17.0</constant>
-<constant digits="0" name="tpsMax" units="ADC">196.0</constant>
+<constant digits="0" name="tpsMin" units="ADC">13.0</constant>
+<constant digits="0" name="tpsMax" units="ADC">198.0</constant>
 <constant digits="0" name="mapMin" units="kpa">10.0</constant>
 <constant digits="0" name="mapMax" units="kpa">260.0</constant>
 <constant digits="0" name="fpPrime" units="s">3.0</constant>
@@ -666,46 +666,44 @@
 </page>
 <page number="1" size="288">
 <constant cols="16" digits="0" name="veTable" rows="16" units="%">
-         37.0 37.0 37.0 37.0 37.0 38.0 39.0 40.0 40.0 40.0 40.0 40.0 40.0 40.0 40.0 39.0 
-         37.0 37.0 38.0 39.0 41.0 43.0 45.0 45.0 46.0 46.0 46.0 46.0 45.0 45.0 45.0 44.0 
-         37.0 38.0 39.0 42.0 44.0 46.0 47.0 48.0 48.0 48.0 48.0 48.0 48.0 48.0 47.0 47.0 
-         38.0 39.0 41.0 45.0 47.0 49.0 50.0 51.0 51.0 51.0 51.0 51.0 50.0 50.0 50.0 49.0 
-         39.0 41.0 44.0 48.0 50.0 52.0 53.0 53.0 54.0 54.0 53.0 53.0 53.0 53.0 52.0 52.0 
-         41.0 44.0 47.0 51.0 53.0 54.0 55.0 56.0 56.0 56.0 56.0 56.0 55.0 55.0 55.0 54.0 
-         43.0 48.0 50.0 53.0 55.0 57.0 58.0 59.0 59.0 59.0 59.0 58.0 58.0 57.0 57.0 57.0 
-         46.0 51.0 53.0 56.0 58.0 59.0 60.0 61.0 61.0 61.0 61.0 61.0 60.0 60.0 60.0 59.0 
-         50.0 54.0 56.0 59.0 61.0 62.0 63.0 64.0 64.0 64.0 64.0 63.0 63.0 62.0 62.0 61.0 
-         53.0 57.0 59.0 61.0 63.0 64.0 66.0 66.0 66.0 66.0 66.0 66.0 65.0 65.0 64.0 64.0 
-         56.0 60.0 62.0 64.0 65.0 67.0 68.0 69.0 69.0 69.0 69.0 68.0 68.0 67.0 67.0 66.0 
-         59.0 63.0 64.0 66.0 68.0 69.0 71.0 71.0 72.0 71.0 71.0 71.0 70.0 70.0 69.0 69.0 
-         65.0 68.0 69.0 71.0 73.0 74.0 76.0 76.0 77.0 77.0 76.0 76.0 75.0 75.0 74.0 74.0 
-         68.0 70.0 72.0 73.0 75.0 77.0 78.0 79.0 79.0 79.0 79.0 79.0 78.0 77.0 77.0 76.0 
-         71.0 73.0 74.0 76.0 78.0 79.0 81.0 81.0 82.0 82.0 81.0 81.0 80.0 80.0 79.0 79.0 
-         74.0 74.0 76.0 78.0 80.0 82.0 83.0 84.0 84.0 84.0 84.0 84.0 83.0 82.0 82.0 81.0 
+         18.0 20.0 22.0 23.0 25.0 27.0 28.0 30.0 31.0 32.0 31.0 29.0 26.0 23.0 20.0 18.0 
+         26.0 29.0 32.0 34.0 36.0 38.0 41.0 43.0 45.0 45.0 43.0 41.0 38.0 34.0 30.0 26.0 
+         32.0 36.0 40.0 42.0 45.0 47.0 49.0 51.0 52.0 52.0 51.0 48.0 45.0 41.0 37.0 33.0 
+         35.0 39.0 43.0 46.0 49.0 51.0 54.0 56.0 57.0 57.0 56.0 53.0 50.0 46.0 42.0 38.0 
+         38.0 43.0 47.0 50.0 53.0 56.0 58.0 61.0 62.0 62.0 61.0 58.0 55.0 51.0 47.0 43.0 
+         41.0 47.0 51.0 54.0 57.0 60.0 62.0 65.0 66.0 66.0 65.0 62.0 59.0 55.0 51.0 47.0 
+         44.0 50.0 55.0 58.0 61.0 64.0 66.0 69.0 70.0 70.0 69.0 66.0 63.0 59.0 55.0 51.0 
+         47.0 53.0 58.0 61.0 65.0 67.0 70.0 72.0 74.0 74.0 72.0 70.0 66.0 62.0 58.0 54.0 
+         50.0 56.0 61.0 64.0 68.0 70.0 73.0 75.0 77.0 77.0 75.0 73.0 69.0 65.0 61.0 57.0 
+         53.0 59.0 64.0 67.0 71.0 73.0 76.0 78.0 80.0 80.0 78.0 76.0 72.0 68.0 64.0 60.0 
+         56.0 62.0 67.0 70.0 74.0 76.0 79.0 81.0 83.0 83.0 81.0 79.0 75.0 71.0 67.0 63.0 
+         58.0 64.0 69.0 73.0 76.0 79.0 81.0 84.0 85.0 85.0 84.0 81.0 78.0 74.0 70.0 66.0 
+         60.0 67.0 72.0 76.0 79.0 81.0 84.0 86.0 88.0 88.0 86.0 84.0 81.0 77.0 73.0 69.0 
+         61.0 68.0 74.0 78.0 81.0 83.0 86.0 88.0 90.0 90.0 88.0 86.0 83.0 79.0 75.0 71.0 
+         63.0 70.0 76.0 80.0 83.0 85.0 88.0 90.0 92.0 92.0 90.0 88.0 85.0 81.0 77.0 73.0 
+         64.0 71.0 77.0 81.0 84.0 86.0 89.0 91.0 93.0 93.0 91.0 89.0 86.0 82.0 78.0 74.0 
       </constant>
 <constant cols="1" digits="0" name="rpmBins" rows="16" units="RPM">
-         500.0 
-         700.0 
-         900.0 
-         1300.0 
-         1800.0 
-         2400.0 
+         800.0 
+         1500.0 
+         2200.0 
+         2600.0 
          3000.0 
-         3700.0 
-         4300.0 
-         4600.0 
+         3400.0 
+         3800.0 
+         4100.0 
+         4400.0 
+         4700.0 
          5000.0 
          5300.0 
-         5700.0 
+         5600.0 
          6000.0 
-         6300.0 
-         6500.0 
+         6400.0 
+         6800.0 
       </constant>
 <constant cols="1" digits="0" name="fuelLoadBins" rows="16" units="kPa">
-         16.0 
-         26.0 
+         20.0 
          30.0 
-         36.0 
          40.0 
          46.0 
          50.0 
@@ -714,10 +712,12 @@
          66.0 
          70.0 
          76.0 
+         80.0 
          86.0 
          90.0 
          96.0 
          100.0 
+         106.0 
       </constant>
 </page>
 <page number="2" size="288">
@@ -817,10 +817,10 @@
          850.0 
       </constant>
 <constant cols="1" digits="0" name="taeRates" rows="4" units="%">
-         8.0 
-         115.0 
-         197.0 
-         250.0 
+         6.0 
+         90.0 
+         160.0 
+         200.0 
       </constant>
 <constant cols="1" digits="0" name="wueBins" rows="10" units="C">
          -40.0 
@@ -1120,28 +1120,28 @@
          0.0 
       </constant>
 <constant cols="1" digits="0" name="iacOLPWMVal" rows="10" units="Duty %">
-         50.0 
-         48.0 
-         46.0 
-         45.0 
-         44.0 
-         43.0 
-         40.0 
-         36.0 
-         32.0 
-         30.0 
+         66.0 
+         63.0 
+         61.0 
+         59.0 
+         57.0 
+         56.0 
+         55.0 
+         55.0 
+         54.0 
+         52.0 
       </constant>
 <constant cols="1" digits="0" name="iacBins" rows="10" units="C">
-         -40.0 
+         -39.0 
          -29.0 
          -15.0 
-         -5.0 
+         -4.0 
          5.0 
-         13.0 
-         28.0 
-         51.0 
-         67.0 
-         100.0 
+         18.0 
+         38.0 
+         72.0 
+         98.0 
+         135.0 
       </constant>
 <constant cols="1" digits="0" name="iacCrankSteps" rows="4" units="Steps">
          123.0 
@@ -2582,6 +2582,7 @@
 <setting name="AFR" value="AFR"/>
 </settings>
 <userComments Comment="These are user comments that can be related to a particular setting or dialog.">
+<userComment name="taeRates" value=""/>
 <userComment name="knock_pin" value=""/>
 <userComment name="ignAlgorithm" value=""/>
 <userComment name="coolantProtRPM" value=""/>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<msq xmlns="http://www.msefi.com/:msq">
+<bibliography author="TunerStudio MS Ultra 3.3.01 - EFI Analytics, Inc." tuneComment="" writeDate="Sat Jun 27 15:42:09 BST 2026"/>
+<versionInfo fileFormat="5.0" firmwareInfo="Speeduino+202207.2" nPages="15" signature="speeduino 202207"/>
+<page/>
+<page number="0" size="128">
+<constant name="ignAlgorithm">"MAP"</constant>
+</page>
+<page number="1" size="288"/>
+<page number="2" size="288">
+<constant cols="16" digits="0" name="advTable1" rows="16" units="deg">
+         16.0 16.0 16.0 16.0 16.0 18.0 24.0 25.0 26.0 28.0 31.0 33.0 34.0 35.0 35.0 36.0 
+         16.0 16.0 16.0 16.0 16.0 18.0 24.0 25.0 26.0 28.0 31.0 33.0 34.0 35.0 35.0 36.0 
+         16.0 16.0 16.0 16.0 16.0 18.0 24.0 25.0 26.0 28.0 31.0 33.0 34.0 35.0 35.0 36.0 
+         16.0 16.0 16.0 16.0 16.0 18.0 24.0 25.0 26.0 28.0 31.0 33.0 34.0 35.0 35.0 36.0 
+         16.0 16.0 16.0 16.0 16.0 18.0 23.0 25.0 26.0 28.0 31.0 33.0 33.0 34.0 34.0 35.0 
+         16.0 16.0 16.0 16.0 16.0 18.0 23.0 25.0 26.0 28.0 31.0 32.0 33.0 33.0 34.0 34.0 
+         16.0 16.0 16.0 16.0 16.0 18.0 23.0 25.0 26.0 28.0 30.0 31.0 31.0 32.0 33.0 33.0 
+         16.0 16.0 16.0 16.0 16.0 18.0 23.0 25.0 26.0 28.0 30.0 31.0 31.0 32.0 33.0 33.0 
+         16.0 16.0 16.0 16.0 16.0 17.0 23.0 25.0 26.0 28.0 30.0 30.0 31.0 31.0 32.0 32.0 
+         16.0 16.0 16.0 16.0 16.0 17.0 23.0 25.0 26.0 28.0 30.0 30.0 31.0 31.0 32.0 32.0 
+         14.0 14.0 14.0 15.0 15.0 17.0 23.0 25.0 26.0 27.0 29.0 30.0 30.0 30.0 30.0 30.0 
+         14.0 14.0 14.0 15.0 15.0 17.0 23.0 26.0 26.0 27.0 29.0 30.0 30.0 30.0 30.0 30.0 
+         14.0 14.0 15.0 16.0 16.0 18.0 23.0 25.0 26.0 27.0 28.0 29.0 29.0 29.0 29.0 29.0 
+         15.0 15.0 16.0 16.0 18.0 20.0 22.0 25.0 26.0 27.0 27.0 28.0 28.0 28.0 28.0 28.0 
+         15.0 15.0 16.0 17.0 18.0 19.0 21.0 24.0 25.0 26.0 27.0 27.0 27.0 28.0 28.0 28.0 
+         14.0 14.0 16.0 17.0 17.0 17.0 19.0 22.0 23.0 25.0 26.0 26.0 26.0 26.0 26.0 27.0 
+      </constant>
+<constant cols="1" digits="0" name="rpmBins2" rows="16" units="RPM">
+         700.0 
+         900.0 
+         1100.0 
+         1300.0 
+         1500.0 
+         1800.0 
+         2200.0 
+         2700.0 
+         3000.0 
+         3400.0 
+         3800.0 
+         4300.0 
+         4800.0 
+         5400.0 
+         6000.0 
+         6700.0 
+      </constant>
+<constant cols="1" digits="0" name="mapBins1" rows="16" units="kPa">
+         20.0 
+         26.0 
+         28.0 
+         30.0 
+         34.0 
+         38.0 
+         42.0 
+         46.0 
+         50.0 
+         56.0 
+         64.0 
+         70.0 
+         78.0 
+         86.0 
+         92.0 
+         100.0 
+      </constant>
+</page>
+<page number="3" size="128"/>
+<page number="4" size="288"/>
+<page number="5" size="128"/>
+<page number="6" size="240"/>
+<page number="7" size="384"/>
+<page number="8" size="192"/>
+<page number="9" size="192"/>
+<page number="10" size="288"/>
+<page number="11" size="192"/>
+<page number="12" size="128"/>
+<page number="13" size="288"/>
+<page number="14" size="256"/>
+<settings Comment="These setting are only used if this msq is opened without a project.">
+<setting name="enablehardware_test" value="enablehardware_test"/>
+<setting name="CELSIUS" value="CELSIUS"/>
+<setting name="resetcontrol_standard" value="resetcontrol_standard"/>
+<setting name="AFR" value="AFR"/>
+</settings>
+<userComments Comment="These are user comments that can be related to a particular setting or dialog.">
+<userComment name="ignAlgorithm" value=""/>
+</userComments>
+</msq>

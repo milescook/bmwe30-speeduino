@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<msq xmlns="http://www.msefi.com/:msq">
+<bibliography author="TunerStudio MS Ultra 3.3.01 - EFI Analytics, Inc." tuneComment="" writeDate="Sat Jun 27 15:52:56 BST 2026"/>
+<versionInfo fileFormat="5.0" firmwareInfo="Speeduino+202207.2" nPages="15" signature="speeduino 202207"/>
+<page/>
+<page number="0" size="128">
+<constant digits="0" name="aeColdPct" units="%">130.0</constant>
+<constant digits="0" name="aeColdTaperMin" units="C">-10.0</constant>
+<constant name="aeMode">"TPS"</constant>
+<constant name="aeApplyMode">"PW Multiplier"</constant>
+<constant digits="0" name="maeThresh" units="kPa/s">255.0</constant>
+<constant digits="0" name="taeThresh" units="%/s">35.0</constant>
+<constant digits="0" name="aeTime" units="ms">40.0</constant>
+<constant name="dfcoEnabled">"Off"</constant>
+<constant digits="0" name="aeColdTaperMax" units="C">60.0</constant>
+<constant digits="0" name="aeTaperMin" units="RPM">1000.0</constant>
+<constant digits="0" name="aeTaperMax" units="RPM">5000.0</constant>
+<constant digits="1" name="dfcoDelay" units="S">2.0</constant>
+<constant digits="0" name="dfcoMinCLT" units="C">30.0</constant>
+</page>
+<page number="1" size="288"/>
+<page number="2" size="288"/>
+<page number="3" size="128">
+<constant cols="1" digits="0" name="taeBins" rows="4" units="%/s">
+         10.0 
+         260.0 
+         480.0 
+         850.0 
+      </constant>
+<constant cols="1" digits="0" name="taeRates" rows="4" units="%">
+         6.0 
+         90.0 
+         160.0 
+         200.0 
+      </constant>
+<constant digits="0" name="dfcoRPM" units="RPM">1500.0</constant>
+<constant digits="0" name="dfcoHyster" units="RPM">200.0</constant>
+<constant digits="1" name="dfcoTPSThresh" units="%">1.0</constant>
+<constant cols="1" digits="0" name="maeBins" rows="4" units="kpa/s">
+         2550.0 
+         2550.0 
+         2550.0 
+         2550.0 
+      </constant>
+<constant cols="1" digits="0" name="maeRates" rows="4" units="%">
+         255.0 
+         255.0 
+         255.0 
+         255.0 
+      </constant>
+</page>
+<page number="4" size="288"/>
+<page number="5" size="128"/>
+<page number="6" size="240"/>
+<page number="7" size="384"/>
+<page number="8" size="192"/>
+<page number="9" size="192"/>
+<page number="10" size="288"/>
+<page number="11" size="192"/>
+<page number="12" size="128"/>
+<page number="13" size="288"/>
+<page number="14" size="256"/>
+<settings Comment="These setting are only used if this msq is opened without a project.">
+<setting name="enablehardware_test" value="enablehardware_test"/>
+<setting name="CELSIUS" value="CELSIUS"/>
+<setting name="resetcontrol_standard" value="resetcontrol_standard"/>
+<setting name="AFR" value="AFR"/>
+</settings>
+<userComments Comment="These are user comments that can be related to a particular setting or dialog.">
+<userComment name="taeRates" value=""/>
+</userComments>
+</msq>
