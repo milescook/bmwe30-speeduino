@@ -21,6 +21,7 @@ These are the key items though take a look through the file list for bits and bo
 - [Intake](docs/intake.md)
 - [Injector wiring](docs/injector-wiring.md)
 - [Main relay](docs/mainrelay.md)
+- [Lambda](docs/lambda.md)
 - [Useful links](docs/links.md)
 
 

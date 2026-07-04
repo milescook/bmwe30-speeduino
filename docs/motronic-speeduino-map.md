@@ -66,14 +66,6 @@ E36 TPS Pin - E30 Pin - Purpose - Motronic pin - Speeduino Pin - IDC Pin
 
 
 
-
-
-# Lambda
-- Black - Signal - ECU Loom pin 28
-- White - Heater - Fuel pump live relay
-- Gray - Signal Ground - ECU Loom pin 10
-- Gray - Heater Ground - ECU Loom ground
-
 # Harness side to o2 side
 - Green to white
 - Brown to white
