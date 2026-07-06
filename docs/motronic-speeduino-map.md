@@ -32,7 +32,7 @@ So you see here the map for my Motronic 1.3 harness ECU pin, to Speeduino pin, f
 - 19 - Main gound - ECU Power relay 85 & speeduino power -ve
 - 22 - Idle out - 36 - PWM Idle 2 - 31
 - 24 - Ground - 23 - Ground - 5
-- 26 - AFM Common ground - 9 - Ground - IAT  / CLT Ground  - 24
+- 26 - AFM Common ground - 9 - Ground - IAT  / CLT Ground / TPS gnd - 24
 - 27 - Start input- to ignition switch and coil - N/A - ECU Power relay pin 86
 - 28 - O2 input - 21 - O2 Sensor - 1
 - 32 - Econometer - N/A (Arduino pin 1) - ~~Speeduino USB Serial data RX (via dash plug) C1 plug pin 11 (Pi TX)~~
@@ -50,8 +50,11 @@ So you see here the map for my Motronic 1.3 harness ECU pin, to Speeduino pin, f
 
 # TPS
 
+Note: TPS ground is being moved from chassis ground to ECU sensor ground to reduce analog noise.
+Use the shared sensor ground path (Motronic pin 26 -> Speeduino pin 9) for TPS ground.
+
 E36 TPS Pin - E30 Pin - Purpose - Motronic pin - Speeduino Pin - IDC Pin
-- 1 - 2 - GND - N/A
+- 1 - 2 - GND (sensor ground) - 26 - 9 - 24
 - 2 - 1 - Signal - 52 - 22 - 3
 - 3 - 3 - Vref (5v) 53 - 13 - 16
 
