@@ -1,4 +1,7 @@
 # ECU Pinout
+
+Status: ON HOLD reference for a future custom harness. For the current running setup, use `../motronic-speeduino-map.md`.
+
 * 34 pins on 4 rows, 9, 8, 9, 8. Pin number and wire colour (if present)
 
  [_1YE]  [_2BL]  [_3GR]  [_4WH]  [_5RD]  [_6BK]  [_7YE]  [_8BL]  [_9--]

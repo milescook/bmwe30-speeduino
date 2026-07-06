@@ -22,7 +22,7 @@ See https://github.com/EFI-Customs/Motronic-1.3-Speeduino-Compatible-Project?tab
 # Shopping list
 ## ECU Wiring
 * 40pin connector ribbon - https://thepihut.com/products/raspberry-pi-40-pin-gpio-socket-connector-to-labelled-pins-female-150mm
-* Standard ecu connectors - [https://www.ebay.co.uk/itm/334459759696](https://www.ebay.co.uk/itm/296055475113?var=594188052033)
+* Standard ecu connectors - [https://www.ebay.co.uk/itm/296055475113?var=594188052033](https://www.ebay.co.uk/itm/296055475113?var=594188052033)
 
 ## Sensors
 See https://wiki.speeduino.com/en/wiring/system

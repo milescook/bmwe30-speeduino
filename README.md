@@ -7,13 +7,13 @@ Disclaimer: Anything you follow here you do at your own risk etc.
 ![Motronic Speeduino](images/motronic-speeduino.png)
 
 ## Wiring
-The only wiring modification needed so far, is a replacement injector sub-loom (later harnesses use a sub loom with a connector - see injector wiring for depin tool), and the TPS wires either needs an adapter or re-wire to work with an E36 variable TPS. I also converted the AFM plug to a generic connector though you could always make an adapter.
+The current running setup uses the stock Motronic 1.3 harness with targeted changes: a replacement injector sub-loom (later harnesses use a sub loom with a connector - see injector wiring for depin tool), TPS rewiring for an E36 variable TPS, AFM plug repurpose, and a relay/ignition module arrangement documented in this repo. I also converted the AFM plug to a generic connector though you could always make an adapter.
 
 You can find a load of shorts and videos on progress here [https://www.youtube.com/cookracinguk](https://www.youtube.com/cookracinguk)
 
 ## Contents
 
-These are the key items though take a look through the file list for bits and bobs. There's an initial stab at a custom harness for example.
+These are the key items though take a look through the file list for bits and bobs. There is also an initial custom harness plan, but that is on hold and should be treated as reference only.
 
 - [Motronic pins to Speeduino map](docs/motronic-speeduino-map.md)
 - [Cluster Conversion](docs/cluster.md)

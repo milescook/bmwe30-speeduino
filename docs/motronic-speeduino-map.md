@@ -1,5 +1,7 @@
 # How to map standard motronic 1.3 harness to speeduino pins (Work in progress)
 
+Status: This is the active wiring map for the current running setup.
+
 WARNING: This is my wiring map, and WILL NOT work for you without harness modification. I'm re-purposing some of the ECU pins for a start, and changing the injector sub loom completely (from 2 batched to 6 individual but running as 3 pairs). I'm trying to use as much of the ECU connector as possible without changing the wiring where I can. For ignition timing I'll need a new loom anyway, as M20s used a single ignition coil and distrubtor running off the cam. I'll keep this initially for simplicity.
 
 See https://wiki.speeduino.com/en/boards/V04 for Speeduino pins.
@@ -12,6 +14,8 @@ For comparison, see the megasquirt map here for the Megasquirt map see https://w
 
 
 # Pin assignments
+
+Note: Some mappings here differ from `speeduino-pins.md` and `new-harness-plans/ecu-pinout.md` because those files describe on-hold custom harness plans.
 
 So you see here the map for my Motronic 1.3 harness ECU pin, to Speeduino pin, followed lastly by IDC pin. IDC is the dupont ribbon connector https://thepihut.com/products/raspberry-pi-40-pin-gpio-socket-connector-to-labelled-pins-female-150mm I have going to the Speeduino which handily labels all it's wires. Took me a while to realise that the numbers labelled have no correlation to the speeduino pins... ah well. I did make a handy map [idc-numberedpins.md](idc-numberedpins.md)
 

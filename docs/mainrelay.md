@@ -17,5 +17,5 @@ It may seem a bit of a roundabout way to power the speeduino... But remember: we
 - ECU Pin - Relay pin - Destination / Description
 - 27 - 86 - Ignition on 12v
 - 19 - 85 - Motronic 19 (main gnd)
-- 36 - 87
+- 36 - 87 - Motronic pin 36 main relay trigger output (grounded via relay)
 - 2 - 30 - Motronic 2 (gnd)

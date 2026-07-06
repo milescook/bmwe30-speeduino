@@ -1,4 +1,7 @@
-    # ECU pins plug
+# ECU pins plug
+
+Status: ON HOLD reference for a custom harness approach. For the current running Motronic-harness setup, use `motronic-speeduino-map.md` as source of truth.
+
 This is a list of functions (see https://wiki.speeduino.com/en/boards/V04) and ECU connector pins - not all correspond to the Speeduino output pins
 
 
@@ -7,6 +10,7 @@ This is a list of functions (see https://wiki.speeduino.com/en/boards/V04) and E
 * Pin number corresponds to the speeduno IDC pin number
 * IDC ribbon number is what is labelled (see table after this) as IDC numbering is different to speeduino pin numbers
 * Harness wire is where it comes out of the ECU connector
+* Some assignments in this file (for example fuel pump output) are plan-level notes and may not match the active Motronic map.
 
 * 1	Injector 1 - Pin 1/2 -> *Injector 1&6* (40) <=> 1 Yellow
 * 2	Injector 2 - Pin 1/2 -> *Injector 2&5* (38) <=> 2 Blue
