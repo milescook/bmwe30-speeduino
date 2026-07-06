@@ -1,8 +1,8 @@
 # About
 
-This repo is a collection of diagrams, wiring plans and 3d printable models. The objective is converting a BMW E30 to use speeduino with a digital dashboard using ts-dash. This uses the original Motronic 1.3 harness to de-risk the conversion. 
+This repo is a collection of diagrams, wiring plans and 3D printable models. The objective is converting a BMW E30 to use Speeduino with a digital dashboard using TS Dash. This uses the original Motronic 1.3 harness to de-risk the conversion.
 
-Disclaimer: Anything you follow here you do at your own risk etc.
+Disclaimer: Anything you follow here is at your own risk.
 
 ![Motronic Speeduino](images/motronic-speeduino.png)
 

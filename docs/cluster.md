@@ -25,8 +25,8 @@ Direct serial over the dash connectors is a non starter as pi uses 3.3v arduino 
 ## C1 (Blue)
 26 Pins
 
-- 7 Tachometer ~~(now Speeduino USB serial date TX from Motronic pin 6) to Pi 10 RX - Orange~~
-- 11 Fuel flow rate ~~(now Speeduino USB serial date RX from Motronic pin 32) to Pi 8 TX - Yellow~~
+- 7 Tachometer ~~(now Speeduino USB serial data TX from Motronic pin 6) to Pi 10 RX - Orange~~
+- 11 Fuel flow rate ~~(now Speeduino USB serial data RX from Motronic pin 32) to Pi 8 TX - Yellow~~
 - 14 Alternator light +
 - 16 Alternator lights -
 - 18 Oil  

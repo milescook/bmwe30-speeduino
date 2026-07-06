@@ -1,8 +1,8 @@
 # Overview
 
-Don't make the mistake I did. Speeduino can trigger ignition either sending signal or ground - great. The E30 ignition coil is triggered by ground - fantastic. So we can use the Speeduino in ground mode, no? Erm... no. You'll find the ignition leds on speeduino just permenantly light up and you'll have no clue why...
+Don't make the mistake I did. Speeduino can trigger ignition either sending signal or ground - great. The E30 ignition coil is triggered by ground - fantastic. So we can use the Speeduino in ground mode, no? Erm... no. You'll find the ignition LEDs on Speeduino just permanently light up and you'll have no clue why...
 
-Turns out the ignition coil is leaking live back through this (motronic 1.3 pin #1) and confuses the hell out of speeduino, so it doesn't fire. Therefore, I use a Bosch 124 ignition module.
+Turns out the ignition coil is leaking live back through this (Motronic 1.3 pin #1) and confuses the hell out of Speeduino, so it doesn't fire. Therefore, I use a Bosch 124 ignition module.
 
 ![Bosch 124](../images/bosch124.png)
 ![Bosch 124 wiring](../images/bosch124-wiring.png)

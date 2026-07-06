@@ -7,7 +7,7 @@ This is a list of functions (see https://wiki.speeduino.com/en/boards/V04) and E
 
 
 ## Pin no, Function -> (IDC ribbon number) <=> harness wire # & colour
-* Pin number corresponds to the speeduno IDC pin number
+* Pin number corresponds to the Speeduino IDC pin number
 * IDC ribbon number is what is labelled (see table after this) as IDC numbering is different to speeduino pin numbers
 * Harness wire is where it comes out of the ECU connector
 * Some assignments in this file (for example fuel pump output) are plan-level notes and may not match the active Motronic map.

@@ -1,8 +1,8 @@
-# Speeduino trouble shooting
+# Speeduino troubleshooting
 
-Sometimes you can't connect to speeduino, and it's required to use speedyloader to re-upload the arduino firmware. No idea why. And the Mac seems picky about what USB attachment - only apple will work.
+Sometimes you can't connect to Speeduino, and it's required to use SpeedyLoader to re-upload the Arduino firmware. No idea why. And the Mac seems picky about which USB cable to use - only Apple worked for me.
 
-Update: Turns out using a newish USB cable *really* helps!
+Update: Turns out using a newer USB cable *really* helps!
 
 # Motronic 1.3 harness <-> Speeduino pin assignment 
 See [motronic-speeduino-map.md](motronic-speeduino-map.md)

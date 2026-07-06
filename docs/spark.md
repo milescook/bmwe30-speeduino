@@ -2,7 +2,7 @@ From
 
 https://www.r3vlimited.com/board/forum/e30-technical-forums/engine-drivetrain/m20/158995-coil-ground-problem
 
-The coil is grounded to produce a spark by the DME. Sine the ground pulses are very narrow you aren't going to get meaningful data on meter. You'd need to use an oscilloscope to look at the ground signal.
+The coil is grounded to produce a spark by the DME. Since the ground pulses are very narrow you aren't going to get meaningful data on meter. You'd need to use an oscilloscope to look at the ground signal.
 
 I presume that you are looking at the coil wire because the engine doesn't have spark when cranking. That being the case, run through what is below and you should be able to find the problem.
 
@@ -34,7 +34,7 @@ relay and power the pump(s) via pin 87. Of the above, only the fuel pump power
 is fused. So if the there's power at pin 87, but not at the pump, check fuse
 11.
 
-The main relay and DME pin 18 receive power from the smaller of the to wires
+The main relay and DME pin 18 receive power from the smaller of the two wires
 that connect to the battery's positive terminal. That wire incorporates an
 in-line fuse. When the DME is presented with a start signal, it grounds the
 main relay pin 85 and furnishes power to the fuel pump relay, injectors, and
@@ -82,7 +82,7 @@ A power check means seeing a voltage within about a tenth of a volt of what
 you measure across the batter terminals, which should be at least 12.6v on a
 charged battery.
 
-A continuity check means seeing less that 1 ohm of resistance.
+A continuity check means seeing less than 1 ohm of resistance.
 
 An open circuit means seeing a resistance of at least 100k ohms.
 
