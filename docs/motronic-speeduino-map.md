@@ -51,17 +51,6 @@ So you see here the map for my Motronic 1.3 harness ECU pin, to Speeduino pin, f
 - 53 - WOT Input - 13 - 5V (TPS Live) - 16
 
 
-
-# TPS
-
-Note: TPS ground is being moved from chassis ground to ECU sensor ground to reduce analog noise.
-Use the shared sensor ground path (Motronic pin 26 -> Speeduino pin 9) for TPS ground.
-
-E36 TPS Pin - E30 Pin - Purpose - Motronic pin - Speeduino Pin - IDC Pin
-- 1 - 2 - GND (sensor ground) - 26 - 9 - 24
-- 2 - 1 - Signal - 52 - 22 - 3
-- 3 - 3 - Vref (5v) 53 - 13 - 16
-
 # Other Motronic pins
 
 - 18 - Constant 12V from Battery - 12v positive (temporary power but will become unused)
