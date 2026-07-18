@@ -19,7 +19,7 @@ These are the key items though take a look through the file list for bits and bo
 - [Cluster Conversion](docs/cluster.md)
 - [Ignition module](docs/ignition.md)
 - [Intake wiring](docs/intake.md)
-- [Injector wiring](docs/injector-wiring.md)
+- [Injectors & wiring](docs/injector-wiring.md)
 - [Main relay](docs/mainrelay.md)
 - [TPS wiring](docs/tps.md)
 - [Fuel level with Arduino Nano](docs/fuel-level-nano.md)

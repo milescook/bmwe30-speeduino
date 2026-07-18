@@ -32,3 +32,7 @@ So instead of re-wiring the injector loom, I bought this excellent depin tool (t
 - 6 - 16 - Fuel Injectors 2 & 5
 - 7 - 17 - Fuel Injectors 3 & 4
 
+## Injectors
+ENGINE BOSCH NUMBER	LBS/HR	CC/MIN	GRAMS	PSI	BAR
+2.5  0-280-150-715	14.5	152.4	109.6	43.5	3
+2.0  0-280-150-716	12.75	134	96.43	43.5	3
