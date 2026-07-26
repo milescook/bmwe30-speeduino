@@ -2,10 +2,16 @@
 
 This is the simplest way to get the E30 fuel sender into TS Dash without spending a Speeduino analog input.
 
-## Sender range
+## Sender range - readings at the guage
 
 - `0 ohms` = full
 - `60 ohms` = empty
+
+BMW use a 68 ohm resistor in the cluster, so 128 ohms was empty
+After filling with 15 it read 98 (then ran the engine 10 mins and read 106 - remember the swirl pot would have taken 1 litre)
+
+
+Maybe 20ohms per 15l? I do have dents in my tank.
 
 ## Wiring
 

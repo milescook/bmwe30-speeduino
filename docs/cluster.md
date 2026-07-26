@@ -48,16 +48,4 @@ Direct serial over the dash connectors is a non starter as pi uses 3.3v arduino 
 ![Plug](../images/dash-blue-plug-pins.png)
 
 
-## Fuel level
-0 ohms full
-60 empty
 
-
-## Fuel level with Arduino Nano
-
-- Wire the sender to Nano `A0`
-- Add a `330 ohm` pull-up from Nano `5V` to `A0`
-- Add a `100 nF` capacitor from `A0` to ground
-- Send the reading to the Pi over USB serial
-
-The sketch is in `../arduino/fuel-level-nano/fuel-level-nano.ino`, and the Pi-side serial reader is in `../tools/fuel_level_serial.py`.

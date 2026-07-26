@@ -14,6 +14,9 @@ M20 AFM uses an outdated method of measuring intake air - a physical door which 
 ## M20 B20
 AFM intake hose od 6.7cm
 
+## M20 B25
+AFM intake hose od 7cm - tbc
+
 ## Intake adapter
 There is an stl for this in stls folder.
 
