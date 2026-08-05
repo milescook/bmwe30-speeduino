@@ -17,7 +17,7 @@ Maybe 20ohms per 15l? I do have dents in my tank.
 
 Use the Nano as the analog reader and send the value to the Pi over USB serial.
 
-- Fuel sender one side -> Nano `A0`
+- Fuel sender one side - White plug pin 4 -> Nano `A0`
 - Fuel sender other side -> ground
 - `330 ohm` resistor from Nano `5V` to `A0`
 - `100 nF` capacitor from `A0` to ground

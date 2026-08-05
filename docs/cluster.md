@@ -47,5 +47,6 @@ Direct serial over the dash connectors is a non starter as pi uses 3.3v arduino 
 ![Plug](../images/dash-blue-port-pins.png)
 ![Plug](../images/dash-blue-plug-pins.png)
 
-
+## Pi
+![Drawing](../images/pi-drawing.png)
 
