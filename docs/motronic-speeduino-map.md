@@ -39,7 +39,7 @@ So you see here the map for my Motronic 1.3 harness ECU pin, to Speeduino pin, f
 - 26 - AFM Common ground - 9 - Ground - IAT  / CLT Ground / TPS gnd - 24
 - 27 - Start input- to ignition switch and coil - N/A - ECU Power relay pin 86
 - 28 - O2 input - 21 - O2 Sensor - 1
-- 32 - Econometer - N/A (Arduino pin 1) - ~~Speeduino USB Serial data RX (via dash plug) C1 plug pin 11 (Pi TX)~~
+- 32 - Econometer - N/A (14 (Proto Area 1) - fuel level (via dash plug) C1 plug pin 11 - N/A
 - 36 - Main relay output - N/A - ECU Power relay pin 87
 - 37 - Switched power from main relay - NA - Speeduino power +ve in - NA
 - 44 - AFM air inlet temp pin 1 - 20 - Inlet Air Temp (IAT) - 2

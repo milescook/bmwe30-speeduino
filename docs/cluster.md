@@ -25,7 +25,7 @@ Direct serial over the dash connectors is a non starter as pi uses 3.3v arduino 
 ## C1 (Blue)
 26 Pins
 
-- 7 Tachometer ~~(now Speeduino USB serial data TX from Motronic pin 6) to Pi 10 RX - Orange~~
+- 7 Tachometer (now fuel level to speeduino)
 - 11 Fuel flow rate ~~(now Speeduino USB serial data RX from Motronic pin 32) to Pi 8 TX - Yellow~~
 - 14 Alternator light +
 - 16 Alternator lights -
@@ -49,4 +49,26 @@ Direct serial over the dash connectors is a non starter as pi uses 3.3v arduino 
 
 ## Pi
 ![Drawing](../images/pi-drawing.png)
+
+## Internal cover connector
+
+The cluster is made up of the main cluster and a cover. The cover has the 2 (blue and white) connectors for the BMW connectors. We use a 40 pin IDC to connect the cover to the main cluster. This is the wiring diagram for this mini loom below:
+
+IDC Pin - Source - Description
+1 - Blue 23 - Switched power +
+2 - Blue 20 - Switched power -
+7 - Blue 7 - Fuel level (from White 4)
+8 - White 4 - Fuel level (to Blue 7)
+
+
+9 - Blue 14 - Batt light +
+10 - Blue 16 - Batt light -
+
+11 - White 5 - Fuel low light +
+12 - Blue 20 - Fuel lo light -
+13 - O2 diagnostic - O2 led
+16 - Can high - car pi hat
+17 - Can low - car pi hat
+
+
 
