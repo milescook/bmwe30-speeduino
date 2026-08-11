@@ -39,8 +39,8 @@ Direct serial over the dash connectors is a non starter as pi uses 3.3v arduino 
 
 - 4 Fuel tank sender
 - 5 Fuel tank low light
-- 8 Speed sensor
-- 13 Speed sensor
+- 8 Speed sensor switching
+- 12 Speed sensor 
 - 22 Check Light ~~(now Speeduino USB GND from Motronic pin 16) to Pi~~
 
 ## Diagrams
@@ -55,20 +55,24 @@ Direct serial over the dash connectors is a non starter as pi uses 3.3v arduino 
 The cluster is made up of the main cluster and a cover. The cover has the 2 (blue and white) connectors for the BMW connectors. We use a 40 pin IDC to connect the cover to the main cluster. This is the wiring diagram for this mini loom below:
 
 IDC Pin - Source - Description
-1 - Blue 23 - Switched power +
-2 - Blue 20 - Switched power -
-7 - Blue 7 - Fuel level (from White 4)
-8 - White 4 - Fuel level (to Blue 7)
 
 
-9 - Blue 14 - Batt light +
-10 - Blue 16 - Batt light -
+1 - Blue 7 - Fuel level (from White 4)
+3 - Blue 23 - Switched power +
+4 - Blue 20 - Switched power -
+6 - Blue 20 - Fuel lo light -
+7 - Blue 16 - Batt light -
+10 - lue 14 - Batt light +
+11 - White 22 - Check Light 
+14 - White 12 speed sensor
+15 - White 5 - Fuel low light +
+17 - White 4 - Fuel level (to Blue 7)
 
-11 - White 5 - Fuel low light +
-12 - Blue 20 - Fuel lo light -
-13 - O2 diagnostic - O2 led
-16 - Can high - car pi hat
-17 - Can low - car pi hat
+
+TBC
+? - O2 diagnostic - O2 led
+? - Can high - car pi hat
+? - Can low - car pi hat
 
 
 
