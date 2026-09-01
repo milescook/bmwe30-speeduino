@@ -74,5 +74,26 @@ TBC
 ? - Can high - car pi hat
 ? - Can low - car pi hat
 
+## Power during cranking
 
+The Diode: This must be a high-current Schottky blocking diode (rated for at least 5A–10A, such as a 10SQ045 or 10A10). Its job is to let power flow from the car battery into the supercapacitor and CarPiHAT, but prevent the supercapacitor from discharging backward into the car's starter motor during cranking.
 
+The Supercapacitor Bank: This acts as a massive energy reservoir. When the car battery voltage drops during cranking, the capacitor steps in and feeds its stored 12V power to the CarPiHAT.
+
+You will insert the diode and the supercapacitor bank only on the 12V BAT line (this comes in our case from one of the accessory switches on the centre console). Do not put them on the 12V ACC line, as the CarPiHAT needs to see the ACC line drop immediately to sense the ignition state.
+
+                [ In-line Fuse ]      [ Schottky Diode ]
+Car Battery 12V (+) ----[ 5A ]-------------[>|]--------+--------> CarPiHAT 12V BAT Pin
+                                            Anode   Cathode    |
+                                                               |
+                                                          +--------+
+
+                                                          |  (+)   |
+                                                          | 16V 83F| Supercapacitor
+                                                          |  (-)   | Bank
+                                                          +--------+
+                                                               |
+Car Chassis Ground (-) ----------------------------------------+--------> CarPiHAT GND Pin
+
+-----------------------------------------------------------------------------------------
+Car ACC Switched 12V (via dash plug) ---------------------------------------------------> CarPiHAT 12V ACC Pin
