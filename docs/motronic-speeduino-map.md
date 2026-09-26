@@ -25,16 +25,18 @@ So you see here the map for my Motronic 1.3 harness ECU pin, to Speeduino pin, f
 - 3 - Fuel Pump Relay Control - 38 - Boost control (swap from 16 fuel pump as I have no ULN chip) - 35
 - 4 - Idle out - 37 - PWM Idle - 33
 - 5 - NA
-- 6 - Tachometer output - N/A (Arduino pin 0) - ~~Speeduino USB Serial data TX (via dash plug) C1 plug pin 7 (Pi RX)~~
+- 6 - Tachometer output - Arduino pin 0 - Dash C1 plug pin 7 bridged to c2 pin 5 (fuel level) - N/A
 - 7 - AFM input pin 2 - 19 - Coolant (CLT) - 4
-- 10 - Oxygen sensor (ground) - 10 - Ground - 22
+- 10 - O2 sensor ground - 10 - Ground - 22
 - 14 - Injector gnd (???) - 12 - Ground - 18
+- 15 - Check engine light - N/A (Lambda loom wire 1 blue) -  Lambda status led
 - 16 - Injectors 1,3,5 - 2 - Injector 2 Pin 1/2 - Injector 2 - 38
 - 16 - Injectors 1,3,5 - 39 - Injector 2 Pin 2/2 - Injector 5 - 37
 - 17 - Injectors 2,4,6 - 3 - Injector 3 Pin 1/2 - Injector 3 - 36
 - 17 - Injectors 2,4,6 - 4 - Injector 3 Pin 2/2 - Injector 4 - 34
 - 19 - Main ground - ECU Power relay 85 & Speeduino power -ve
 - 22 - Idle out - 36 - PWM Idle 2 - 31
+- 23 - O2 sensor heater - N/A - Join with Motronic pin 3 fuel pump gnd signal - When grounded activates the O2 relay 
 - 24 - Ground - 23 - Ground - 5
 - 26 - AFM Common ground - 9 - Ground - IAT  / CLT Ground / TPS gnd - 24
 - 27 - Start input- to ignition switch and coil - N/A - ECU Power relay pin 86

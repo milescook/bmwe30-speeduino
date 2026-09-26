@@ -22,7 +22,7 @@ Direct serial over the dash connectors is a non starter as pi uses 3.3v arduino 
 
 
 
-## C1 (Blue)
+## C1 (Blue but black)
 26 Pins
 
 - 7 Tachometer (now fuel level to speeduino)
@@ -34,7 +34,7 @@ Direct serial over the dash connectors is a non starter as pi uses 3.3v arduino 
 - 23 Live 12v
 
 
-## C2 (White)
+## C2 (White but green)
 26 Pins
 
 - 4 Fuel tank sender
@@ -57,16 +57,15 @@ The cluster is made up of the main cluster and a cover. The cover has the 2 (blu
 IDC Pin - Source - Description
 
 
-1 - Blue 7 - Fuel level (from White 4)
-3 - Blue 23 - Switched power +
-4 - Blue 20 - Switched power -
-6 - Blue 20 - Fuel lo light -
-7 - Blue 16 - Batt light -
-10 - lue 14 - Batt light +
-11 - White 22 - Check Light 
-14 - White 12 speed sensor
-15 - White 5 - Fuel low light +
-17 - White 4 - Fuel level (to Blue 7)
+3 - Blue 7 - Fuel level (from White 4)
+5 - Blue 23 - Switched power + ✅
+8 - Blue 20 - Switched power - ✅.
+9 - Blue 16 - Batt light - ✅
+12 - Blue 14 - Batt light + ✅
+13 - White 22 - Check Light (Use as lambda status light) ✅
+16 - White 12 speed sensor ✅
+17 - White 5 - Fuel low light + ✅
+19 - White 4 - Fuel level (to Blue 7) ❌
 
 
 TBC
@@ -95,5 +94,6 @@ Car Battery 12V (+) ----[ 5A ]-------------[>|]--------+--------> CarPiHAT 12V B
                                                                |
 Car Chassis Ground (-) ----------------------------------------+--------> CarPiHAT GND Pin
 
+
 -----------------------------------------------------------------------------------------
-Car ACC Switched 12V (via dash plug) ---------------------------------------------------> CarPiHAT 12V ACC Pin
+Car ACC Switched 12V (via dash plug) ---------------------------------------------------> CarPiHAT 12V ACC Pinw
