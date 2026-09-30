@@ -27,4 +27,11 @@ Yellow - chassis GND - 4 - motronic n/a
 ![Car Lambda Connector](../images/O2wiring.jpg)
 
 
+# Harness side to o2 side
+- Green to white
+- Brown to white
+- black to gray
+- yellow to black
+
+
 

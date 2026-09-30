@@ -23,9 +23,8 @@ Direct serial over the dash connectors is a non starter as pi uses 3.3v arduino 
 
 
 ## C1 (Blue but black)
-26 Pins
 
-- 7 Tachometer (now fuel level to speeduino)
+- 7 Tachometer (now fuel level output to speeduino via Motronic 32)
 - 11 Fuel flow rate ~~(now Speeduino USB serial data RX from Motronic pin 32) to Pi 8 TX - Yellow~~
 - 14 Alternator light +
 - 16 Alternator lights -
@@ -35,9 +34,8 @@ Direct serial over the dash connectors is a non starter as pi uses 3.3v arduino 
 
 
 ## C2 (White but green)
-26 Pins
 
-- 4 Fuel tank sender
+- 4 Fuel tank sender in (bridged to C1 7)
 - 5 Fuel tank low light
 - 8 Speed sensor switching
 - 12 Speed sensor 
@@ -72,7 +70,6 @@ IDC Pin - Source - Description
 
 
 TBC
-? - O2 diagnostic - O2 led
 ? - Can high - car pi hat
 ? - Can low - car pi hat
 
@@ -100,3 +97,11 @@ Car Chassis Ground (-) ----------------------------------------+--------> CarPiH
 
 -----------------------------------------------------------------------------------------
 Car ACC Switched 12V (via dash plug) ---------------------------------------------------> CarPiHAT 12V ACC Pinw
+
+
+## Motronic 1.3 to Dashboard Cluster Connections
+Motronic 1.3 Pin	Core Signal Function	C101 Pin	Target Dash Cluster Plug & Pin	Wire Colour (Engine Side)
+Pin 6	Engine Speed Output (Tachometer / Rev Counter)	Pin 7	C1 (Blue) - Pin 7	Black
+Pin 32	Fuel Consumption Rate Output (Econometer Gauge)	Pin 11	C1 (Blue) - Pin 11	Yellow / White
+Pin 15	Check Engine Light Trigger (US Models Only)	Pin 15	C1 (Blue) - Pin 4	Brown / Yellow
+Pin 29	Vehicle Speed Input (VSS Signal from cluster to ECU)	Pin 19	C2 (White) - Pin 10	Black / White
