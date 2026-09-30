@@ -1,6 +1,6 @@
 ## Fun fact - 40 pin IDC wire numbers don't correspond to speeduino numbers...
 
-### IDC Ribbon number - Speeduino IDC pin number
+### IDC Ribbon number - Speeduino pin number
 * 40 <=> 1
 * 39 <=> 40
 * 38 <=> 2

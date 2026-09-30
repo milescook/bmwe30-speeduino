@@ -8,7 +8,7 @@ M20 AFM uses an outdated method of measuring intake air - a physical door which 
 - Pin no - ECU Pin No - New purpose - Speeduino pin
 - 1 - 44 - Inlet Air Temp (IAT) - 20
 - 2 - 7 - Coolant (CLT) - 19
-- 3 - 12 - Unused
+- 3 - 12 - Lambda status LED - 15
 - 4 - 26 - IAT / CLT Ground - 9
 
 ## M20 B20

@@ -66,6 +66,9 @@ IDC Pin - Source - Description
 16 - White 12 speed sensor ✅
 17 - White 5 - Fuel low light + ✅
 19 - White 4 - Fuel level (to Blue 7) ❌
+20 - White 12 - Speed sensor + ❌
+21 - White 8 - Speed sensor - ❌
+
 
 
 TBC
