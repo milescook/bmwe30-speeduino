@@ -24,8 +24,8 @@ Direct serial over the dash connectors is a non starter as pi uses 3.3v arduino 
 
 ## C1 (Blue but black)
 
-- 7 Tachometer (now fuel level output to speeduino via Motronic 32)
-- 11 Fuel flow rate ~~(now Speeduino USB serial data RX from Motronic pin 32) to Pi 8 TX - Yellow~~
+- 7 Tachometer bridged to C2 4 (now fuel level output to speeduino via Motronic 32)
+- 11 Fuel flow rate 
 - 14 Alternator light +
 - 16 Alternator lights -
 - 18 Oil  
@@ -37,9 +37,9 @@ Direct serial over the dash connectors is a non starter as pi uses 3.3v arduino 
 
 - 4 Fuel tank sender in (bridged to C1 7)
 - 5 Fuel tank low light
-- 8 Speed sensor switching
-- 12 Speed sensor 
-- 22 Check Light ~~(now Speeduino USB GND from Motronic pin 16) to Pi~~
+- 8 Speed sensor -ve
+- 12 Speed sensor +ve
+- 22 Check Light
 
 ## Diagrams
 ![Plug](../images/dash-blue-port-pins.png)
@@ -64,7 +64,6 @@ IDC Pin - Source - Description
 16 - White 12 speed sensor ✅
 17 - White 5 - Fuel low light + ✅
 19 - White 4 - Fuel level (to Blue 7) ❌
-20 - White 12 - Speed sensor + ❌
 21 - White 8 - Speed sensor - ❌
 
 
@@ -100,8 +99,8 @@ Car ACC Switched 12V (via dash plug) -------------------------------------------
 
 
 ## Motronic 1.3 to Dashboard Cluster Connections
-Motronic 1.3 Pin	Core Signal Function	C101 Pin	Target Dash Cluster Plug & Pin	Wire Colour (Engine Side)
-Pin 6	Engine Speed Output (Tachometer / Rev Counter)	Pin 7	C1 (Blue) - Pin 7	Black
-Pin 32	Fuel Consumption Rate Output (Econometer Gauge)	Pin 11	C1 (Blue) - Pin 11	Yellow / White
-Pin 15	Check Engine Light Trigger (US Models Only)	Pin 15	C1 (Blue) - Pin 4	Brown / Yellow
-Pin 29	Vehicle Speed Input (VSS Signal from cluster to ECU)	Pin 19	C2 (White) - Pin 10	Black / White
+Motronic 1.3 Pin - Purpose - 	Core Signal Function -	Target Dash Cluster Plug & Pin	
+Pin 6 - Vehicle Speed -ve - Engine Speed Output (Tachometer / Rev Counter)	- 	C2 (White) - Pin 8	
+Pin 32 - Fuel level - Fuel Consumption Rate Output (Econometer Gauge)	- 	C1 (Blue) - Pin 11	
+Pin 15 - Lambda led status - Check Engine Light Trigger -	C1 (Blue) - Pin 4
+Pin 29 - Vehicle Speed +ve -	Vehicle Speed Input (VSS Signal from cluster to ECU) - C2 (White) - Pin 12

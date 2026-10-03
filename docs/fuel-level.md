@@ -18,27 +18,31 @@ Maybe 20 ohms per 15L? I do have dents in my tank.
 - Fuel sender other side -> ground
 - `1k ohm` resistor from Speeduino pin 13 (idc 16) for 5v to pin Arudino A9
 
+![Fuel-level circuit](../images/fuelcircuit.png)
+
 Speeduino 40-Pin Harness
        +---------------------
        |                       
-       | Speeduino Pin 13 IDC 16 (5V VREF)--+
+       | IDC 16 (5V VREF)-------------------+
        |                                    |
        |                                    |
        |                                  [1k Ω]  Pull-Up Resistor
        |                                    |
-       | Pin Analog A9* --------------------| <--- (Splice Point)
+       | Pin Analog A9 IDC 12---------------| <--- (Splice Point)
        |                                    |
-       | Speedunio Pin 9 IDC 24 (Sensor GND)|
+       | IDC 24 (Sensor GND)                |
        +---------------------    |          |
                                  |          |
                                  v          v Motronic 32 (Econometer)
                             [=== Fuel Sender ===]
                             (Mounted in E30 Tank)
 
-Pin A9 -> Proto 47 -> Speeduino 15 idc 12 -> Motronic 32
+Pin A9 -> Proto 47 -> idc 12 -> Motronic 32
+
+
 ## Why this works
 
-The sender is a variable resistor. The 1km ohm resistor forms a voltage divider with it, producing 0.28–0.57V at pin 14 as the tank goes from full to empty. Speeduino reads this as a standard analog input and TunerStudio exposes it as a loggable channel.
+The sender is a variable resistor. The 1km ohm resistor forms a voltage divider with it, producing 0.28–0.57V at IDC pin 14 as the tank goes from full to empty. Speeduino reads this as a standard analog input and TunerStudio exposes it as a loggable channel.
 
 ## TunerStudio setup
 
@@ -51,12 +55,15 @@ The sender is a variable resistor. The 1km ohm resistor forms a voltage divider 
 
 With the 5V reference and 1k ohm divider, expected ADC range:
 
-- Full (68 ohm sender): ~65 / 0.28v
+- Full (68 ohm sender): ~65 / 0.318v
 - Empty (128 ohm sender): ~116 / 0.57v
 
 Measure the actual values at known fuel levels and use those for the calibration curve in TunerStudio.
+
 
 ## Steps
 
 Connect wire A9 -> proto 47 (IDC 12)
 IDC 16 (5v) -> 1k resistor -> IDC 12
+IDC 12 -> M32
+Dash bridge - C2 4 -> C1 7 (M32)
