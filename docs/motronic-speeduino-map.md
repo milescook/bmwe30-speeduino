@@ -27,7 +27,6 @@ See https://docs.google.com/spreadsheets/d/1haOUjEqQDFiFeeowzTITHGqYi211TcSW3U1A
 - 2 - Ground - N/A - ECU Power relay ground, pin 30
 - 3 - Fuel Pump Relay Control - 38 - Boost control (swap from 16 fuel pump as I have no ULN chip) - 35
 - 4 - Idle out - 37 - PWM Idle - 33
-- 5 - NA
 - 6 - Tachometer output - 26 - Cam Input VR2- - Dash C2 8 Vehicle Speed- 11
 - 7 - AFM input pin 2 - 19 - Coolant (CLT) - 4
 - 10 - O2 sensor ground - 10 - Ground - 22

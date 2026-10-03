@@ -2,7 +2,7 @@
 
 The fuel sender feeds directly into IDC pin 15. TunerStudio reads it natively and TS Dash can display it as a gauge — no separate microcontroller needed.
 
-## Sender range - readings at the gauge
+## Sender range - readings at the original cluster
 
 - `0 ohms` = full
 - `60 ohms` = empty
@@ -38,7 +38,7 @@ Speeduino 40-Pin Harness
 Pin A9 -> Proto 47 -> Speeduino 15 idc 12 -> Motronic 32
 ## Why this works
 
-The sender is a variable resistor. The 1km ohm resistor forms a voltage divider with it, producing 0.28–0.57V at pin 14 as the tank goes from full to empty. The 100 nF capacitor filters noise before the ADC samples. Speeduino reads this as a standard analog input and TunerStudio exposes it as a loggable channel.
+The sender is a variable resistor. The 1km ohm resistor forms a voltage divider with it, producing 0.28–0.57V at pin 14 as the tank goes from full to empty. Speeduino reads this as a standard analog input and TunerStudio exposes it as a loggable channel.
 
 ## TunerStudio setup
 
@@ -49,9 +49,14 @@ The sender is a variable resistor. The 1km ohm resistor forms a voltage divider 
 
 ## Calibration
 
-With the 5V reference and 330 ohm divider, expected ADC range:
+With the 5V reference and 1k ohm divider, expected ADC range:
 
-- Full (0 ohm sender): ~0
-- Empty (60 ohm sender): ~157
+- Full (68 ohm sender): ~65 / 0.28v
+- Empty (128 ohm sender): ~116 / 0.57v
 
 Measure the actual values at known fuel levels and use those for the calibration curve in TunerStudio.
+
+## Steps
+
+Connect wire A9 -> proto 47 (IDC 12)
+IDC 16 (5v) -> 1k resistor -> IDC 12
