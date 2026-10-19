@@ -63,7 +63,7 @@ Measure the actual values at known fuel levels and use those for the calibration
 
 ## Steps
 
-Connect wire A9 -> proto 47 (IDC 12)
-IDC 16 (5v) -> 1k resistor -> IDC 12
-IDC 12 -> M32
-Dash bridge - C2 4 -> C1 7 (M32)
+- Connect wire A9 -> proto 47 (IDC 12) ✅
+- IDC 16 (5v) -> 1k resistor -> IDC 12 ✅
+- IDC 12 -> M32
+- Dash bridge - C2 4 -> C1 7 (M32)

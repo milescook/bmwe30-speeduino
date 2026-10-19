@@ -56,21 +56,17 @@ IDC Pin - Source - Description
 
 
 3 - Blue 7 - Fuel level (from White 4)
-5 - Blue 23 - Switched power + ✅
-8 - Blue 20 - Switched power - ✅.
-9 - Blue 16 - Batt light - ✅
-12 - Blue 14 - Batt light + ✅
-13 - White 22 - Check Light (Use as lambda status light) ✅
-16 - White 12 speed sensor ✅
-17 - White 5 - Fuel low light + ✅
-19 - White 4 - Fuel level (to Blue 7) ❌
-21 - White 8 - Speed sensor - ❌
+14 - Blue 23 - Switched power + 
+39 - Blue 20 - Switched power - 
+9 - Blue 16 - Batt light - 
+17 - Blue 14 - Batt light + 
 
+22 - White 22 - Check Light (Use as lambda status light) 
+12 - White 12 speed sensor 
+37 - White 5 - Fuel low light + 
+29 - White 4 - Fuel level (to Blue 7) 
+21 - White 8 - Speed sensor - 
 
-
-TBC
-? - Can high - car pi hat
-? - Can low - car pi hat
 
 ## Power during cranking
 

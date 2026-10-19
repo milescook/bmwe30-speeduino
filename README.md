@@ -17,6 +17,7 @@ These are the key items though take a look through the file list for bits and bo
 
 - [Motronic pins to Speeduino map](docs/motronic-speeduino-map.md)
 - [Cluster Conversion](docs/cluster.md)
+- [Speeduino engine data to AiM SOLO 2 DL over CAN](docs/aim-solo-can.md)
 - [Ignition module](docs/ignition.md)
 - [Intake wiring](docs/intake.md)
 - [Injectors & wiring](docs/injector-wiring.md)
