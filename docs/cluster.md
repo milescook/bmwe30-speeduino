@@ -61,8 +61,8 @@ IDC Pin - Source - Description
 9 - Blue 16 - Batt light - 
 17 - Blue 14 - Batt light + 
 
-22 - White 22 - Check Light (Use as lambda status light) 
-12 - White 12 speed sensor 
+33 - White 22 - Check Light (Use as lambda status light) 
+18 - White 12 speed sensor 
 37 - White 5 - Fuel low light + 
 29 - White 4 - Fuel level (to Blue 7) 
 21 - White 8 - Speed sensor - 
