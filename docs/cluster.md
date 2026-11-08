@@ -1,3 +1,7 @@
+## IMPORANT
+
+A chunk of the below for wiring is out of date, beware... I updated the pins to use and went with car pi hat
+
 # Overview
 
 The objective here is a ts-dash (see http://tunerstudio.com/index.php/products/ts-dash) replacement for the instrument clocks, using the standard E30 wiring.
