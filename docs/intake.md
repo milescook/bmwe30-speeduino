@@ -8,8 +8,10 @@ M20 AFM uses an outdated method of measuring intake air - a physical door which 
 - Pin no - ECU Pin No - New purpose - Speeduino pin
 - 1 - 44 - Inlet Air Temp (IAT) - 20
 - 2 - 7 - Coolant (CLT) - 19
-- 3 - 12 - Lambda status LED - 15
+- 3 - 12 - Lambda status LED - N/A
 - 4 - 26 - IAT / CLT Ground - 9
+
+Pin 3 is hijacked for the Lambda LED which will go to Motronic 12, bridged to Motronic 15 (was Check Engine Light), in order to be sent to the cluster through C1 4
 
 ## M20 B20
 AFM intake hose od 6.7cm

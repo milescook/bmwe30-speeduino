@@ -27,12 +27,12 @@ See https://docs.google.com/spreadsheets/d/1haOUjEqQDFiFeeowzTITHGqYi211TcSW3U1A
 - 2 - Ground - N/A - ECU Power relay ground, pin 30
 - 3 - Fuel Pump Relay Control - 38 - Boost control (swap from 16 fuel pump as I have no ULN chip) - 35
 - 4 - Idle out - 37 - PWM Idle - 33
-- 6 - Tachometer output - 26 - Cam Input VR2- - Dash C2 8 Vehicle Speed- 11
+- 6 - Tachometer output - 26 - Cam Input VR2- - Dash C1 7 bridged to C2 8 Vehicle Speed- 11
 - 7 - AFM input pin 2 - 19 - Coolant (CLT) - 4
 - 10 - O2 sensor ground - 10 - Ground - 22
-- 12 - AFM Ref - N/A - - Lambda led status patches to Motronic pin 15 to go to dash
+- 12 - AFM Ref pin 3 - N/A (from Lambda controller LED) - - N/A
 - 14 - Injector gnd - 12 - Ground - 18
-- 15 - Check engine light - N/A (Lambda loom wire 1 blue) -  Lambda status led
+- 15 - Check engine light - N/A (joined Motronic pin 12) - N/A
 - 16 - Injectors 1,3,5 - 2 - Injector 2 Pin 1/2 - Injector 2 - 38
 - 16 - Injectors 1,3,5 - 39 - Injector 2 Pin 2/2 - Injector 5 - 37
 - 17 - Injectors 2,4,6 - 3 - Injector 3 Pin 1/2 - Injector 3 - 36
@@ -44,8 +44,8 @@ See https://docs.google.com/spreadsheets/d/1haOUjEqQDFiFeeowzTITHGqYi211TcSW3U1A
 - 26 - AFM Common ground - 9 - Ground - IAT  / CLT Ground / TPS gnd - 24
 - 27 - Start input- to ignition switch and coil - N/A - ECU Power relay pin 86
 - 28 - O2 input - 21 - O2 Sensor - 1
-- 29 - Vehicle speed - 24 - Cam Input VR2+ - Dash C2 12 Vehicle speed - 7
-- 32 - Econometer - 15 - (Proto Area 47 - fuel level (via dash bridged C1 7 to C2 4) - 12
+- 29 - Vehicle speed - 24 - Cam Input VR2+ - Dash C2 10 (from C2 12) Vehicle speed - 7
+- 32 - Econometer - 15 - (Proto Area 47 - fuel level (via dash bridged C1 11 to C2 4) - 12
 - 36 - Main relay output - N/A - ECU Power relay pin 87
 - 37 - Switched power from main relay - NA - Speeduino power +ve in - NA
 - 44 - AFM air inlet temp pin 1 - 20 - Inlet Air Temp (IAT) - 2

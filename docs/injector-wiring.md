@@ -27,7 +27,7 @@ So instead of re-wiring the injector loom, I bought this excellent depin tool (t
 - 1 - 45 - Fuel Injectors 1 & 6
 - 2 - Unused Gnd
 - 3 - Unused Gnd
-- 4 - Unused goes to clocks
+- 4 - Unused CLT goes to clocks
 - 5 - NA - DME relay (live for Fuel Injectors)
 - 6 - 16 - Fuel Injectors 2 & 5
 - 7 - 17 - Fuel Injectors 3 & 4

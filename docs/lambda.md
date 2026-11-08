@@ -10,7 +10,7 @@
 We need the ECU to accept the following wiring:
 
 - Pin no. - Colour - Purpose - Connects to
-- 1 - Blue - LED diagnostic - (standalone wire back to ECU) Motronic pin 15 (to dashboard status light)
+- 1 - Blue - LED diagnostic - Direct to cluster
 - 2 - Green - Signal - Car side green Motronic pin 28
 - 3 - White - Heater ground - Car side Gray (chassis ground)
 - 4 - Brown - Narrow band signal - unused

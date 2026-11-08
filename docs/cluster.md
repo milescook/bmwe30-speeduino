@@ -26,7 +26,7 @@ Direct serial over the dash connectors is a non starter as pi uses 3.3v arduino 
 
 - 7 Tachometer bridged to C2 4 (now fuel level output to speeduino via Motronic 32)
 - 11 Fuel flow rate 
-- 14 Alternator light +
+- 14 Switched live +
 - 16 Alternator lights -
 - 18 Oil  
 - 20 GND
@@ -39,7 +39,6 @@ Direct serial over the dash connectors is a non starter as pi uses 3.3v arduino 
 - 5 Fuel tank low light
 - 8 Speed sensor -ve
 - 12 Speed sensor +ve
-- 22 Check Light
 
 ## Diagrams
 ![Plug](../images/dash-blue-port-pins.png)
@@ -50,22 +49,21 @@ Direct serial over the dash connectors is a non starter as pi uses 3.3v arduino 
 
 ## Internal cover connector
 
-The cluster is made up of the main cluster and a cover. The cover has the 2 (blue and white) connectors for the BMW connectors. We use a 40 pin IDC to connect the cover to the main cluster. This is the wiring diagram for this mini loom below:
+The cluster is made up of the main cluster and a cover. The cover has the 2 (blue and white) connectors for the BMW connectors. We use a 10 pin IDC to connect the cover to the main cluster. This is the wiring diagram for this mini loom below:
 
-IDC Pin - Source - Description
+IDC Pin & Colour - Source - Description
 
 
-3 - Blue 7 - Fuel level (from White 4)
-14 - Blue 23 - Switched power + 
-39 - Blue 20 - Switched power - 
-9 - Blue 16 - Batt light - 
-17 - Blue 14 - Batt light + 
-
-33 - White 22 - Check Light (Use as lambda status light) 
-18 - White 12 speed sensor 
-37 - White 5 - Fuel low light + 
-29 - White 4 - Fuel level (to Blue 7) 
-21 - White 8 - Speed sensor - 
+1 BROWN - C1 18 - Oil light -
+2 RED - C1 23 - Switched power + 
+3 ORANGE - C1 14 - Switched power + 
+4 YELLOW - C2 12 speed sensor 
+5 GREEN - C2 8 - Speed sensor - 
+6 BLUE - C1 16 - Batt light -
+7 GREY - C1 4 - Lambda LED +
+8 PURPLE - Unused
+9 BLACK - C1 20 - Switched power - GNDS
+10 WHITE - C2 5 - Fuel low light + 
 
 
 ## Power during cranking
@@ -95,8 +93,19 @@ Car ACC Switched 12V (via dash plug) -------------------------------------------
 
 
 ## Motronic 1.3 to Dashboard Cluster Connections
+
 Motronic 1.3 Pin - Purpose - 	Core Signal Function -	Target Dash Cluster Plug & Pin	
-Pin 6 - Vehicle Speed -ve - Engine Speed Output (Tachometer / Rev Counter)	- 	C2 (White) - Pin 8	
-Pin 32 - Fuel level - Fuel Consumption Rate Output (Econometer Gauge)	- 	C1 (Blue) - Pin 11	
-Pin 15 - Lambda led status - Check Engine Light Trigger -	C1 (Blue) - Pin 4
-Pin 29 - Vehicle Speed +ve -	Vehicle Speed Input (VSS Signal from cluster to ECU) - C2 (White) - Pin 12
+
+Pin 6 - Vehicle Speed -ve - Engine Speed Output (Tachometer / Rev Counter)	-  C2 8 bridged from C1 7
+Pin 29 - Vehicle Speed +ve -	Vehicle Speed Input (VSS Signal from cluster to ECU) - C2 12 bridged from C2 10
+
+Pin 15 - Lambda LED - Check Engine Light Trigger - C1 (Blue) - Pin 4
+Pin 32 - Econometer - C1 11 (BRIDGED FROM C2 4 - FUEL LEVEL)
+
+--
+## ECU dash plug connections
+Our purpose | Old Purpose | Motronic pin | cluster
+Vehicle speed -ve | Tachometer (RPM)	Pin 6	| Blue Plug (C1) — Pin 7
+Vehicle speed +ve  | Vehicle Speed Input (VSS)	Pin 29	|	White Plug (C2) — Pin 10 (Output from Cluster to ECU)
+Fuel level | Econometer (Fuel Rate)	Pin 32	|	Blue Plug (C1) — Pin 11 
+Lambda light | Check Engine Light (CEL)	Pin 15	| Whute Plug (C2) — Pin 16
